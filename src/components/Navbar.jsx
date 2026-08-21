@@ -1,53 +1,83 @@
 function Navbar() {
   return (
-    <nav className="fixed top-0 w-full bg-rose-950/70 backdrop-blur-xl border-b border-white/10 z-50">
+    <nav className="sticky top-0 z-50 bg-rose-950/95 backdrop-blur-md border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
 
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-5">
+          {/* Logo */}
+          <a
+            href="#home"
+            className="text-2xl font-bold text-yellow-300"
+          >
+            ✨ Divya Portfolio
+          </a>
 
-        <h1 className="text-2xl font-bold text-yellow-300">
-          ✨ Divya Portfolio
-        </h1>
+          {/* Navigation Links */}
+          <div className="hidden md:flex items-center gap-8">
 
-        <ul className="hidden md:flex gap-8 text-white">
+            <a
+              href="#home"
+              className="text-white hover:text-yellow-300 transition duration-300"
+            >
+              🏠 Home
+            </a>
 
-          <li className="hover:text-yellow-300 transition cursor-pointer">
-            🏠 Home
-          </li>
+            <a
+              href="#about"
+              className="text-white hover:text-yellow-300 transition duration-300"
+            >
+              👩 About
+            </a>
 
-          <li className="hover:text-yellow-300 transition cursor-pointer">
-            👩 About
-          </li>
+            <a
+              href="#education"
+              className="text-white hover:text-yellow-300 transition duration-300"
+            >
+              🎓 Education
+            </a>
 
-          <li className="hover:text-yellow-300 transition cursor-pointer">
-            🎓 Education
-          </li>
+            <a
+              href="#skills"
+              className="text-white hover:text-yellow-300 transition duration-300"
+            >
+              💻 Skills
+            </a>
 
-          <li className="hover:text-yellow-300 transition cursor-pointer">
-            💻 Skills
-          </li>
+            <a
+              href="#projects"
+              className="text-white hover:text-yellow-300 transition duration-300"
+            >
+              📁 Projects
+            </a>
 
-          <li className="hover:text-yellow-300 transition cursor-pointer">
-            📂 Projects
-          </li>
+            <a
+              href="#certificates"
+              className="text-white hover:text-yellow-300 transition duration-300"
+            >
+              🏆 Certificates
+            </a>
 
-          <li className="hover:text-yellow-300 transition cursor-pointer">
-            🏆 Certificates
-          </li>
+            <a
+              href="#contact"
+              className="text-white hover:text-yellow-300 transition duration-300"
+            >
+              📞 Contact
+            </a>
 
-          <li className="hover:text-yellow-300 transition cursor-pointer">
-            📞 Contact
-          </li>
+          </div>
 
-        </ul>
+          {/* Resume Button */}
+          <a
+            href="/dd final data analyst resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition duration-300"
+          >
+            📄 Resume
+          </a>
 
-        <button className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transition">
-
-          📄 Resume
-
-        </button>
-
+        </div>
       </div>
-
     </nav>
   );
 }
