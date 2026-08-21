@@ -7,12 +7,12 @@ function Navbar() {
           {/* Logo */}
           <a
             href="#home"
-            className="text-2xl font-bold text-yellow-300"
+            className="text-2xl font-bold text-yellow-300 hover:text-yellow-200 transition duration-300"
           >
             ✨ Divya Portfolio
           </a>
 
-          {/* Navigation Links */}
+          {/* Navigation */}
           <div className="hidden md:flex items-center gap-8">
 
             <a
@@ -66,12 +66,13 @@ function Navbar() {
 
           </div>
 
-          {/* Resume Button */}
+          {/* Resume */}
           <a
             href="/dd final data analyst resume.pdf"
+            download="Divya_Dharshini_dd final analyst resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition duration-300"
+            className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 hover:scale-105 transition duration-300"
           >
             📄 Resume
           </a>

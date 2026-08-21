@@ -6,21 +6,24 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div>
+      {/* Navigation Bar */}
       <Navbar />
-      <Home />
-      <About />
-      <Education />
-      <Skills />
-      <Projects />
-      <Certificates />
-      <Contact />
-      <Footer />
-    </>
+
+      {/* Portfolio Sections */}
+      <main>
+        <Home />
+        <About />
+        <Education />
+        <Skills />
+        <Projects />
+        <Certificates />
+        <Contact />
+      </main>
+    </div>
   );
 }
 
