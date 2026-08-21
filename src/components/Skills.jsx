@@ -39,19 +39,19 @@ function Skills() {
 
             <div className="flex flex-wrap gap-2 mt-4">
 
-              <span className="skill-tag">
+              <span className="skill-tag text-white">
                 ☕ Java
               </span>
 
-              <span className="skill-tag">
+              <span className="skill-tag text-white">
                 🗄️ SQL
               </span>
 
-              <span className="skill-tag">
+              <span className="skill-tag text-white">
                 🐬 MySQL
               </span>
 
-              <span className="skill-tag">
+              <span className="skill-tag text-white">
                 🧩 OOP
               </span>
 
